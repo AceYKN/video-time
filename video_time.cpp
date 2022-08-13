@@ -1,14 +1,14 @@
-#include<stdio.h>
+#include<stdio.h>//å®ç°è¾ƒä¸ºç®€å• ä¸éœ€è¦æ³¨é‡Š
 double m,s,v,mm,ss;
 long long int total,totall;
 int cishu=0;
 int main(){
 	while(1){
-		printf("ÊÓÆµÊ±³¤(·Ö Ãë)£º");
+		printf("è§†é¢‘æ—¶é•¿(åˆ† ç§’)ï¼š");
 		scanf("%lf%lf",&m,&s);
-		printf("±¶ËÙ£º"); 
+		printf("å€é€Ÿï¼š"); 
 		scanf("%lf",&v);
-		if(v==0) printf("Äú±¾´Î´ò¿ªÈí¼ş¼ÆËãÁË%d´Î (±¾´ÎËãÄãµ÷Æ¤£¬²»¼ÆËãÔÚ´ËÄÚ¡£¡£)\n\n\n",cishu);
+		if(v==0) printf("æ‚¨æœ¬æ¬¡æ‰“å¼€è½¯ä»¶è®¡ç®—äº†%dæ¬¡ (æœ¬æ¬¡ç®—ä½ è°ƒçš®ï¼Œä¸è®¡ç®—åœ¨æ­¤å†…ã€‚ã€‚)\n\n\n",cishu);
 		else{
 			mm=m;ss=s;
 			total=m*60+s;
@@ -25,11 +25,11 @@ int main(){
 			if(ss<0){
 				ss=-ss;
 			}
-			printf("Êµ¼ÊÊ±³¤£º%.0lf ·Ö %.0lf Ãë (¹²¼Æ %lld Ãë)\n",m,s,total);
+			printf("å®é™…æ—¶é•¿ï¼š%.0lf åˆ† %.0lf ç§’ (å…±è®¡ %lld ç§’)\n",m,s,total);
 			if(totall>0){
-				printf("ÄúĞèÒª¶àºÄÊ±£º%.0lf ·Ö %.0lf Ãë £¨¹²¼Æ %lld Ãë£©\n\n",mm,ss,totall);
+				printf("æ‚¨éœ€è¦å¤šè€—æ—¶ï¼š%.0lf åˆ† %.0lf ç§’ ï¼ˆå…±è®¡ %lld ç§’ï¼‰\n\n",mm,ss,totall);
 			}else if(totall!=0){
-				printf("Äú½ÚÊ¡ÁË£º%.0lf ·Ö %.0lf Ãë £¨¹²¼Æ %lld Ãë£©\n\n",mm,ss,-totall);
+				printf("æ‚¨èŠ‚çœäº†ï¼š%.0lf åˆ† %.0lf ç§’ ï¼ˆå…±è®¡ %lld ç§’ï¼‰\n\n",mm,ss,-totall);
 			}else{
 				printf("\n\n");
 			}
